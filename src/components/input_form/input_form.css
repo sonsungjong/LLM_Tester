@@ -2,7 +2,37 @@
     width: 90%;
     max-width: 75rem;
     margin: 3rem auto;
-    color: white;
+    color: black;
+}
+
+.inputform-select-row{
+  display: flex;
+  gap:50px;
+}
+
+.inputform-row-2{
+  display:flex;
+  height: 50px;
+}
+
+.inputform-select-row div label{
+  font-size:25px;
+}
+
+.inputform-select-row div{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap:10px;
+  padding:0 0 30px 0;
+}
+
+.inputform-container select{
+  padding:10px;
+  font-size:larger;
+  background:lightgray;
+  border:none;
+  border-radius: 4px;
 }
 
 .inputform-header{
@@ -23,45 +53,46 @@
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    color: #b3aea5;
+    color: black;
     font-weight: bold;
 }
   
   .inputform-form input,
   .inputform-form textarea {
     display: block;
-    width: 100%;
+    width: 80%;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    border: 1px solid #454952;
-    background: #1c2027;
+    border: none;
+    background: lightgray;
     font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
-    color: #ddd6cb;
+    color: black;
+    margin-right:15px;
   }
   
   .inputform-form input:focus,
+  .inputform-form select:focus,
   .inputform-form textarea:focus {
     outline-color: #f99f2a;
-    background-color: #1f252d;
+    background-color: lightgray;
   }
   
   .inputform-row {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .inputform-row p {
     width: 100%;
   }
   
-  .inputform-actions {
-    text-align: right;
-  }
+
   
   .inputform-actions button {
-    border: 0;
-    padding: 0.75rem 2rem;
+    padding:10px;
+    margin-top:-15px;
     background: linear-gradient(90deg, #f9572a, #ff9b05);
     border: none;
     color: #ffffff;
@@ -70,6 +101,7 @@
     font: inherit;
     font-size: 1.25rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-right:15px;
   }
   
   .inputform-actions button:hover,
@@ -84,3 +116,8 @@
     color: #979797;
     cursor: not-allowed;
   }
+
+
+.inputform-padding-10{
+  padding:10px 0;
+}
